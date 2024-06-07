@@ -1,0 +1,19 @@
+/* fonte */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/*  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    min-height: 100vh;
+  }
+
+  .border-b {
+    border-bottom: 1px solid #e5e7eb;
+    width: 100%;
+  }
+}
