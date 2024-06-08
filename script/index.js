@@ -32,11 +32,13 @@ const planos = [
 
 const cardsTemplate = (plan) => `
       <ul
-          class="relative mt-8 md:mt-0 md:w-[calc(100%/3)] 2xl:w-[calc(100%/4)]">
+          class="relative mt-8 md:mt-0 md:w-[calc(100%/3)] 2xl:w-[calc(100%/4)] md:grow-0 md:shrink md:basis-[25%] 2xl:basis-[20%]">
           <li
             class="${
-              plan === planos[1] ? ' bg-[#696fdd] text-white  ' : ' bg-white '
-            } mx-4 rounded-md px-4 pt-4 pb-5 flex flex-col items-center card-1 isVisible shadow-card">
+              plan === planos[1]
+                ? ' bg-[#696fdd] text-white md:h-[50vh] '
+                : ' bg-white '
+            } mx-4 md:mx-0 rounded-md px-4 pt-4 pb-5 flex flex-col items-center card-1 isVisible shadow-card  ">
             <p class="opacity-70 my-4" id="planos">${plan.plano}</p>            
             <p class="text-5xl text-center my-3 opacity-70">${
               plan.priceAnual
@@ -50,16 +52,19 @@ const cardsTemplate = (plan) => `
             <div class="border-b w-full"></div>
             <button
               class=" ${
-                plan === planos[1] &&
-                ' border-[1px] border-black hover:border-white border-solid '
-              } linearGradient self-stretch uppercase py-2 rounded-md mt-8 text-white text-sm">
+                plan === planos[1]
+                  ? ' border-[1px] border-black hover:border-white border-solid '
+                  : ' btnHover '
+              } linearGradient self-stretch uppercase py-2 rounded-md mt-8 text-white text-sm ">
               Learn More
             </button>
           </li>
           <li
             class="${
-              plan === planos[1] ? ' bg-[#696fdd] text-white ' : ' bg-white '
-            } mx-4 rounded-md px-4 pt-4 pb-5 flex flex-col items-center card-2 isVisible isHidden shadow-card">
+              plan === planos[1]
+                ? ' bg-[#696fdd] text-white md:h-[50vh] '
+                : ' bg-white '
+            } mx-4 md:mx-0 rounded-md px-4 pt-4 pb-5 flex flex-col items-center card-2 isVisible isHidden shadow-card md:grow-0 md:shrink md:basis-[25%] 2xl:basis-[20%] ">
             <p class="opacity-70 my-4">${plan.plano}</p>
             <p class="text-5xl text-center my-3 opacity-70">${plan.price}</p>
             <div class="border-b w-full"></div>
@@ -71,9 +76,10 @@ const cardsTemplate = (plan) => `
             <div class="border-b w-full"></div>
             <button
               class=" ${
-                plan === planos[1] &&
-                ' border-[1px] border-black hover:border-white border-solid '
-              }  linearGradient self-stretch uppercase py-2 rounded-md mt-8 text-white text-sm">
+                plan === planos[1]
+                  ? ' border-[1px] border-black hover:border-white border-solid '
+                  : ' btnHover '
+              }  linearGradient self-stretch uppercase py-2 rounded-md mt-8 text-white text-sm ">
               Learn More
             </button>
           </li>

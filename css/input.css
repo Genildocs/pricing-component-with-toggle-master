@@ -11,7 +11,6 @@
     font-weight: 700;
     min-height: 100vh;
     background: hsl(240, 78%, 98%);
-    overflow: hidden;
   }
 
   .border-b {
@@ -36,5 +35,14 @@
   .isHidden {
     @apply absolute top-0 left-0 h-full w-full z-10 transition-all duration-500;
     transform: rotateY(180deg);
+  }
+
+  .btnHover {
+    border: 1px solid black;
+  }
+
+  .btnHover:hover {
+    background: transparent;
+    color: #696fdd;
   }
 }
