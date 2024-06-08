@@ -10,8 +10,8 @@ This is a solution to the [Pricing component with toggle challenge on Frontend M
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Genildocs/pricing-component-with-toggle-master)
-- Live Site URL: [Add live site URL here](https://pricing-component-with-toggle-master-wine.vercel.app/)
+- Solution URL: [Github](https://github.com/Genildocs/pricing-component-with-toggle-master)
+- Live Site URL: [Vercel](https://pricing-component-with-toggle-master-wine.vercel.app/)
 
 ## My process
 
