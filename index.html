@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,15 +12,17 @@
       href="./images/favicon-32x32.png" />
     <link rel="stylesheet" href="./css/output.css" />
     <title>Frontend Mentor | [Pricing component with toggle]</title>
-    <script type="module" src="./script/index.js" defer></script>
+
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
     <main id="container" class="pt-5">
       <section class="flex flex-col items-center">
-        <h1 class="text-center mb-6 md:text-2xl opacity-80">Our Pricing</h1>
+        <h1 class="text-center mb-6 md:text-2xl lg:text-3xl opacity-80">
+          Our Pricing
+        </h1>
         <div class="flex items-center gap-10">
-          <p class="text-sm opacity-50">Annually</p>
+          <p class="text-sm opacity-50 lg:text-lg">Annually</p>
           <button id="btnSelect">
             <div
               class="bg-gradient-to-r from-cyan-500 to-blue-500 w-7 h-4 rounded-md flex items-center">
@@ -29,119 +31,13 @@
                 id="select"></div>
             </div>
           </button>
-          <p class="text-sm opacity-50">Monthly</p>
+          <p class="text-sm opacity-50 lg:text-lg">Monthly</p>
         </div>
       </section>
       <section
-        class="mt-8 mb-8 w-full md:flex md:items-center md:justify-center">
-        <!-- Basic -->
-        <ul class="relative md:w-[calc(100%/3)] 2xl:w-[calc(100%/4)]">
-          <li
-            class="bg-white mx-4 rounded-md px-4 pt-4 pb-5 flex flex-col items-center card-1 isVisible shadow-card">
-            <p class="opacity-70 my-4">Basic</p>
-            <p class="text-5xl text-center my-3 opacity-70">$199.99</p>
-            <div class="border-b w-full"></div>
-            <p class="text-center my-3 opacity-70">500 GB Storage</p>
-            <div class="border-b w-full"></div>
-            <p class="text-center my-3 opacity-70">2 Users Allowed</p>
-            <div class="border-b w-full"></div>
-            <p class="text-center my-3 opacity-70">Send up to 3 GB</p>
-            <div class="border-b w-full"></div>
-            <button
-              class="linearGradient self-stretch uppercase py-2 rounded-md mt-8 text-white text-sm">
-              Learn More
-            </button>
-          </li>
-          <li
-            class="bg-white mx-4 rounded-md px-4 pt-4 pb-5 flex flex-col items-center card-2 isVisible isHidden shadow-card">
-            <p class="opacity-70 my-4">Basic</p>
-            <p class="text-5xl text-center my-3 opacity-70">$19.99</p>
-            <div class="border-b w-full"></div>
-            <p class="text-center my-3 opacity-70">500 GB Storage</p>
-            <div class="border-b w-full"></div>
-            <p class="text-center my-3 opacity-70">2 Users Allowed</p>
-            <div class="border-b w-full"></div>
-            <p class="text-center my-3 opacity-70">Send up to 3 GB</p>
-            <div class="border-b w-full"></div>
-            <button
-              class="linearGradient self-stretch uppercase py-2 rounded-md mt-8 text-white text-sm">
-              Learn More
-            </button>
-          </li>
-        </ul>
-
-        <ul
-          class="relative mt-8 md:mt-0 md:w-[calc(100%/3)] 2xl:w-[calc(100%/4)]">
-          <li
-            class="bg-[#696fdd] mx-4 rounded-md px-4 pt-4 pb-5 flex flex-col items-center card-1 isVisible text-white shadow-card">
-            <p class="opacity-70 my-4">Professional</p>
-            <p class="text-5xl text-center my-3 opacity-70">$249.99</p>
-            <div class="border-b w-full"></div>
-            <p class="text-center my-3 opacity-70">1 TB Storage</p>
-            <div class="border-b w-full"></div>
-            <p class="text-center my-3 opacity-70">5 Users Allowed</p>
-            <div class="border-b w-full"></div>
-            <p class="text-center my-3 opacity-70">Send up to 10 GB</p>
-            <div class="border-b w-full"></div>
-            <button
-              class="linearGradient self-stretch uppercase py-2 rounded-md mt-8 text-white text-sm border-[1px] border-black hover:border-white border-solid">
-              Learn More
-            </button>
-          </li>
-          <li
-            class="bg-[#696fdd] mx-4 rounded-md px-4 pt-4 pb-5 flex flex-col items-center card-2 isVisible isHidden text-white shadow-card">
-            <p class="opacity-70 my-4">Professional</p>
-            <p class="text-5xl text-center my-3 opacity-70">$24.99</p>
-            <div class="border-b w-full"></div>
-            <p class="text-center my-3 opacity-70">1 TB Storage</p>
-            <div class="border-b w-full"></div>
-            <p class="text-center my-3 opacity-70">5 Users Allowed</p>
-            <div class="border-b w-full"></div>
-            <p class="text-center my-3 opacity-70">Send up to 10 GB</p>
-            <div class="border-b w-full"></div>
-            <button
-              class="linearGradient self-stretch uppercase py-2 rounded-md mt-8 text-white text-sm border-[1px] border-black hover:border-white border-solid">
-              Learn More
-            </button>
-          </li>
-        </ul>
-        <!-- Master-->
-        <ul
-          class="relative mt-8 md:mt-0 md:w-[calc(100%/3)] 2xl:w-[calc(100%/4)]">
-          <li
-            class="bg-white mx-4 rounded-md px-4 pt-4 pb-5 flex flex-col items-center card-1 isVisible shadow-card">
-            <p class="opacity-70 my-4">Master</p>
-            <p class="text-5xl text-center my-3 opacity-70">$399.99</p>
-            <div class="border-b w-full"></div>
-            <p class="text-center my-3 opacity-70">2 TB Storage</p>
-            <div class="border-b w-full"></div>
-            <p class="text-center my-3 opacity-70">10 Users Allowed</p>
-            <div class="border-b w-full"></div>
-            <p class="text-center my-3 opacity-70">Send up to 20 GB</p>
-            <div class="border-b w-full"></div>
-            <button
-              class="linearGradient self-stretch uppercase py-2 rounded-md mt-8 text-white text-sm">
-              Learn More
-            </button>
-          </li>
-          <li
-            class="bg-white mx-4 rounded-md px-4 pt-4 pb-5 flex flex-col items-center card-2 isVisible isHidden shadow-card">
-            <p class="opacity-70 my-4">Master</p>
-            <p class="text-5xl text-center my-3 opacity-70">$39.99</p>
-            <div class="border-b w-full"></div>
-            <p class="text-center my-3 opacity-70">2 TB Storage</p>
-            <div class="border-b w-full"></div>
-            <p class="text-center my-3 opacity-70">10 Users Allowed</p>
-            <div class="border-b w-full"></div>
-            <p class="text-center my-3 opacity-70">Send up to 20 GB</p>
-            <div class="border-b w-full"></div>
-            <button
-              class="linearGradient self-stretch uppercase py-2 rounded-md mt-8 text-white text-sm">
-              Learn More
-            </button>
-          </li>
-        </ul>
-      </section>
+        id="cards"
+        class="mt-8 mb-8 w-full md:flex md:items-center md:justify-center"></section>
     </main>
+    <script type="module" src="./script/index.js"></script>
   </body>
 </html>
