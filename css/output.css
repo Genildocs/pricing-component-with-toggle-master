@@ -455,6 +455,7 @@ body {
   font-weight: 700;
   min-height: 100vh;
   background: hsl(240, 78%, 98%);
+  overflow-x: hidden;
 }
 
 .border-b {
@@ -639,12 +640,12 @@ ul > li {
   margin-bottom: 2rem;
 }
 
-.mt-8{
-  margin-top: 2rem;
-}
-
 .mt-20{
   margin-top: 5rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
 }
 
 .flex{
@@ -669,10 +670,6 @@ ul > li {
 
 .w-full{
   width: 100%;
-}
-
-.basis-\[25\%\]{
-  flex-basis: 25%;
 }
 
 .transform{
@@ -785,16 +782,6 @@ ul > li {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.\!text-white{
-  --tw-text-opacity: 1 !important;
-  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
-}
-
-.\!text-black{
-  --tw-text-opacity: 1 !important;
-  color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
-}
-
 .opacity-50{
   opacity: 0.5;
 }
@@ -854,11 +841,6 @@ ul > li {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.hover\:\!text-black:hover{
-  --tw-text-opacity: 1 !important;
-  color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
-}
-
 @media (min-width: 768px){
   .md\:mx-0{
     margin-left: 0px;
@@ -879,10 +861,6 @@ ul > li {
 
   .md\:w-\[calc\(100\%\/3\)\]{
     width: calc(100% / 3);
-  }
-
-  .md\:w-\[90\%\]{
-    width: 90%;
   }
 
   .md\:shrink{
